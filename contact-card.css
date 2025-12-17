@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #FAAC46;
+    width: 350px;
+   /* height: 600px; */
+    padding: 72px 24px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.flower {
+    display: block;
+    margin: 16px auto 0;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.avatar {
+    display: block;
+    border-radius: 50%;
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: "Micro 5", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 16px 0 4px;
+    text-align: center;
+    color: #BC7575;
+    -webkit-text-stroke: 2px black;
+}
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px; 
+    font-weight: 300;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #F7C6C6;
+    padding: 6px 12px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.contact-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+    margin: 2px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(167, 86, 249, 0.15)
+}
+
+.contact a:focus-visible {
+    outline: none;
+}
+
+.contact:has(a:focus-visible) {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px rgba(167, 86, 249, 0.15);
+}
+
+.contact:hover,
+.contact:has(a:focus-visible) {
+    transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact {
+        transition: none;
+    }
+
+.contact:hover,
+.contact:has(a:focus-visible) {
+    transform: none;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
